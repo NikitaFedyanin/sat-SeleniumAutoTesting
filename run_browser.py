@@ -16,8 +16,9 @@ class Browser:
 
     def _open_url(self):
         """Открыть url"""
-        self.driver.get(self.url)
+        self.driver.get('about:blank')
         self.driver.maximize_window()
+        self.driver.get(self.url)
 
 
 def close_window():
